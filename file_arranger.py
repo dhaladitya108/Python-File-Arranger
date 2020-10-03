@@ -5,8 +5,10 @@ import os  # getting list of files from a directory, moving files
 import time  # seeing the excution time of the program
 from tqdm import tqdm  # progressive bar
 
-src = "C:/Users/Adi/Desktop/folder1/"  # files are moved from here
-des = "C:/Users/Adi/Desktop/folder2/"  # files are moved here
+
+# Following are the sample source and destination folder. Please specify path according to your system directory
+src = "C:/Users/Adi/Desktop/folder1/"  # source folder
+des = "C:/Users/Adi/Desktop/folder2/"  # destination folder
 
 start_time = time.time()
 fl_name = os.listdir(src)
