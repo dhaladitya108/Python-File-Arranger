@@ -4,11 +4,20 @@ from components.file_extention import fe  # file extention dictionary
 import os  # getting list of files from a directory, moving files
 import time  # seeing the excution time of the program
 from tqdm import tqdm  # progressive bar
+import argparse
 
+
+
+#setting up the parser
+parser = argparse.ArgumentParser(description="arranging files according to the genre")
+parser.add_argument('source',type=str,help="path of the source file")
+parser.add_argument('destination',type=str,help="path of the destination file")
+
+args = parser.parse_args()
 
 # Following are the sample source and destination folder. Please specify path according to your system directory
-src = "C:/Users/Adi/Desktop/folder1/"  # source folder
-des = "C:/Users/Adi/Desktop/folder2/"  # destination folder
+src = args.source  # source folder
+des = args.destination  # destination folder
 
 start_time = time.time()
 fl_name = os.listdir(src)
