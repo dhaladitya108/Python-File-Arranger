@@ -21,5 +21,6 @@ DES --> the path where you want the files to be moved</br>
 ```
 python file_arranger.py  SRC DES
 ```
-example(windows):- ```python file_arranger.py C:/Users/Adi/Download/ C:/Users/Adi/Desktop/files/```
+example(windows):- ```python file_arranger.py C:/Users/Adi/Download/ C:/Users/Adi/Desktop/files/```</br>
+(linux): ```python file_arranger.py /home/kana/Videos /home/kana/sorted_files/```
 > **Note:** remember to put '/' at the end, and the direction of the backslash should be same as the above example
