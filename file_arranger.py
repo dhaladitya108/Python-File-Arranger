@@ -4,7 +4,7 @@ from components.file_extention import fe  # file extention dictionary
 import os  # getting list of files from a directory, moving files
 import time  # seeing the excution time of the program
 from tqdm import tqdm  # progressive bar
-import argparse
+import argparse # makes it easy to write user-friendly command-line interfaces
 
 
 
